@@ -75,13 +75,22 @@ Ham AQI Category değerleri sadeleştirilerek Simple_AQI_Category adıyla yeni b
 * Moderate → 1
 * Unhealthy, Very Unhealthy, Hazardous → Poor/Unhealthy → 2
 
+![Sınıf Dağılımı Grafiği](Gorseller/SınıfDagılımı.png)
+
 Bu yeni kategori Simple_AQI_Num ile sayısallaştırıldı.
 Yalnızca model için gerekli feature’lar (CO AQI Value, Ozone AQI Value, NO2 AQI Value, PM2.5 AQI Value) seçildi.
 
 ### Veri Görselleştirme
 
 Kirletici seviyeleri ile hedef değişken arasındaki ilişki scatter plotlar ile analiz edildi.
+
+![Sınıf Dağılımı Grafiği](Gorseller/KorelasyonIsıHaritası.png)
+
 Kirleticilerin artışı ile AQI kategorisinin kötüleşmesi arasındaki deterministik ilişki grafiklerle gözlemlendi.
+
+![Sınıf Dağılımı Grafiği](Gorseller/VerilerinIncelenmesi.png)
+
+
 
 ### Eğitim Test Ayrımı ve Ölçeklendirme
 
@@ -107,3 +116,5 @@ Elde edilen doğruluklar:
 
 Modellerin doğruluk oranları incelendiğinde, Decision Tree ve Random Forest'ın %100 başarı göstermesi, kirletici değerleri ile AQI kategorisi arasındaki güçlü ve doğrudan ilişkiden kaynaklanmaktadır. Çünkü CO, Ozone, NO₂ ve PM2.5 seviyeleri zaten AQI hesaplamasında kullanılan temel unsurlardır.
 Bu nedenle modelin hedef değişkeni tahmin etmesi görece kolay olmuş ve yüksek doğruluk oranları elde edilmiştir. Ayrıca Decision Tree ve Random Forest modelleri daha önce hiç görmediği test verileri üzerinde %100 doğruluk oranına ulaşarak hatasız bir performans sergilemişlerdir.
+![Sınıf Dağılımı Grafiği](Gorseller/ConfusionMatrix.png)
+
