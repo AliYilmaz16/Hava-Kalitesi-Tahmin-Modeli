@@ -106,4 +106,4 @@ Elde edilen doğruluklar:
 ## Değerlendirme ve Sonuç
 
 Modellerin doğruluk oranları incelendiğinde, Decision Tree ve Random Forest'ın %100 başarı göstermesi, kirletici değerleri ile AQI kategorisi arasındaki güçlü ve doğrudan ilişkiden kaynaklanmaktadır. Çünkü CO, Ozone, NO₂ ve PM2.5 seviyeleri zaten AQI hesaplamasında kullanılan temel unsurlardır.
-Bu nedenle modelin hedef değişkeni tahmin etmesi görece kolay olmuş ve yüksek doğruluk oranları elde edilmiştir. Ayrıca Modelin daha önce hiç görmediği test verileri üzerinde %100 doğruluk oranına ulaşarak hatasız bir performans sergilemiştir.
+Bu nedenle modelin hedef değişkeni tahmin etmesi görece kolay olmuş ve yüksek doğruluk oranları elde edilmiştir. Ayrıca Decision Tree ve Random Forest modelleri daha önce hiç görmediği test verileri üzerinde %100 doğruluk oranına ulaşarak hatasız bir performans sergilemişlerdir.
